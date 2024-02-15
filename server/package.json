@@ -6,7 +6,7 @@
     "socket.io": "^4.7.4"
   },
   "scripts": {
-    "start": "npm run build-client && node server.js",
+    "start": "node server.js",
     "dev": "nodemon server.js",
     "build-client": "cd ../client && npm run build"
   },
