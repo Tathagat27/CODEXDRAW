@@ -1,8 +1,9 @@
 # CODEXDRAW
 
 <p align="center">
-  <img src="https://github.com/Tathagat27/CODEXDRAW/blob/main/client/src/assets/codexDrawcropedAdobe.svg" />
+  <img src="https://github.com/Tathagat27/CODEXDRAW/blob/main/client/src/assets/codexDrawcropedAdobe.svg" width="500" />
 </p>
+
 
 CodexDraw is a collaborative platform crafted for seamless real-time collaboration among programmers, igniting peer learning, and serving as a playground for ingenious solutions! The app boasts an intuitive collaborative text editor and a dynamic whiteboard, offering users a dedicated space to ideate, brainstorm, and work collaboratively. 
 
