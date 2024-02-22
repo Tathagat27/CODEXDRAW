@@ -18,6 +18,9 @@ const Coderoom = () => {
   const [users, setUsers] = useState([]);
   const [expanded, setExpanded] = useState(false);
   const [board, setBoard] = useState(false);
+  const [fullScreen, setFullscreen] = useState(false);
+  
+  const element = document.getElementById("coderoom-container");
 
   useEffect(() => {
     const init = () => {
@@ -69,8 +72,8 @@ const Coderoom = () => {
       return <Navigate to='/' />
 
     return (
-      <div className='h-screen w-screen flex border- border-black'>
-        <div className='w-14 h-full'><Sidebar room_code={roomId} expanded={expanded} setExpanded={setExpanded} users={users} /></div>
+      <div className='h-screen w-screen flex border- border-black' id="coderoom-container">
+        <div className='w-14 h-full'><Sidebar room_code={roomId} expanded={expanded} setExpanded={setExpanded} users={users} fullScreen={fullScreen} setFullscreen={setFullscreen} element={element} /></div>
         <div className={`h-screen absolute ${(expanded) ? 'translate-x-0' : '-translate-x-full'} border- border-red-700 transition-all ease-in-out duration-300 w-full sm:w-2/5 z-20 shadow-2xl rounded-r-2xl`}><Dashboard users={users} room_code={roomId} expanded={expanded} setExpanded={setExpanded} /></div>
         
         <div className={`h-auto flex-1 flex w-72 border- border-yellow-700 ${(expanded) ? 'blur-sm' : ''}`}>
