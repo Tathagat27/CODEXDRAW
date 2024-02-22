@@ -22,7 +22,7 @@ const Dashboard = ({ users, room_code, expanded, setExpanded }) => {
   return (
     <div className="flex flex-col h-full w-full bg-teal-800/80 rounded-r-2xl">
       <div className="flex pl-4 items-center h-12 p-2 bg-cyan-200/90 rounded-tr-2xl">
-        <span className='absolute z-10 text-teal-900'><XCircle onClick={() => setExpanded(!expanded)} /></span>
+        <span className='absolute z-10 text-teal-900 cursor-pointer'><XCircle onClick={() => setExpanded(!expanded)} /></span>
         <img className="h-10 w-full mix-blend-multiply select-none" src={logo} alt='logo'/>
         {/* <button className={styles.menu}><img src={menu_close} alt='menu_close' /></button> */}
       </div>

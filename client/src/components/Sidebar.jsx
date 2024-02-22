@@ -24,7 +24,7 @@ function Sidebar({expanded, setExpanded, users, room_code, fullScreen, setFullsc
 
   return (
     <div className="flex flex-col h-full w-full">
-        <div className="flex justify-center items-center h-12 p-2 bg-slate-800 text-teal-400 font-bold">
+        <div className="flex justify-center items-center h-12 p-2 bg-slate-800 text-teal-400 font-bold cursor-pointer">
          <Menu onClick={() => setExpanded(!expanded)} />
         </div>
 
