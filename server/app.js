@@ -48,6 +48,8 @@ io.on('connection', (socket) => {
     socket.in(roomId).emit(ACTIONS.CODE_CHANGE, { roomId, code });
   })
 
+
+
   socket.on(ACTIONS.BOARD_CHANGE, ({roomId, lines: slines}) => {
     socket.in(roomId).emit(ACTIONS.BOARD_CHANGE, { roomId, slines });
   })
