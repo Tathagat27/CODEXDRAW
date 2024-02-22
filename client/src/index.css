@@ -16,3 +16,40 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  #sidebar_users::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  #codeResults::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(99, 163, 194));
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, rgb(46, 152, 205));
+  }
+ 
+  #codeResults2::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(99, 163, 194));
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, rgb(46, 152, 205));
+  }
+
+  #dashboardUsersScroll::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, rgb(99, 163, 194));
+    border-radius: 20px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, rgb(46, 152, 205));
+  }

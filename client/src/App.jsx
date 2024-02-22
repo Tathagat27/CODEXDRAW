@@ -18,7 +18,7 @@ const router = createBrowserRouter([
 function App() {
 
   const { toasts } = useToasterStore();
-  const TOAST_LIMIT = 3
+  const TOAST_LIMIT = 1
 
   useEffect(() => {
     toasts

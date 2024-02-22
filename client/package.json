@@ -11,13 +11,16 @@
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
+    "axios": "^1.6.7",
     "codexdraw": "file:..",
     "konva": "^9.3.3",
     "lucide-react": "^0.330.0",
+    "qs": "^6.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-konva": "^18.2.10",
+    "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.22.0",
     "socket.io-client": "^4.7.4",
     "uuid": "^9.0.1"
