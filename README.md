@@ -47,7 +47,11 @@ npm run dev
 
 - A real-time collaborative code editor.
 
+- You can also Execute your code effortlessly and view its output directly on CodexDraw.
+
 - Participants can also share their thoughts via a real-time whiteboard.
+
+- Its responsive design allows it to adapt seamlessly to various screen sizes.
 
 
 # 📜 LICENSE
