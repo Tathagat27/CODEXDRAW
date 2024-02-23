@@ -84,7 +84,7 @@ const Board = ({ socket, roomId, setBoard }) => {
         </div>
       </div>
 
-    <div className=" bg-slate-800/85 overflow-auto h-full w-full">
+    <div className=" bg-slate-800/85 overflow-y-hidden overflow-x-auto h-full w-full">
       <Stage
         width={window.innerWidth}
         height={window.innerHeight}

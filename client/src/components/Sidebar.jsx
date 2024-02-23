@@ -32,7 +32,7 @@ function Sidebar({expanded, setExpanded, users, room_code, fullScreen, setFullsc
         {
           users.map((user) => (
               <div key={user.socketId} className="bg-gray-700/50 rounded-[50%] hover:rounded-md my-2 hover:text-white/80 hover:bg-teal-500 transition-all delay-100 ease-in-out select-none min-h-10 w-10 flex justify-center items-center shadow-lg font-extrabold text-2xl text-teal-400 group">
-            {user.username.charAt(0).toUpperCase()}
+            {user?.username?.charAt(0).toUpperCase()}
             <span className="absolute w-auto m-2 px-2 py-1 left-12 rounded-md shadow-md text-slate-300 bg-gray-800 text-sm font-semibold transition-all duration-100 origin-left z-10 scale-0 group-hover:scale-100">{user.username}</span>
             </div>
             

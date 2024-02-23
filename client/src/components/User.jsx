@@ -1,11 +1,20 @@
 import toast from 'react-hot-toast'
+import { useNavigate } from 'react-router-dom';
 
 const User = ({ username }) => {
-  return (
-    (!username) ? (<div className='h-screen w-full bg-transparent'>
-        <div>{toast.error("Please Refresh the Page")}</div>
+  
+  const navigateTo = useNavigate();
 
-    </div>) :
+  const handleConnectionError = () => {
+        toast.error('Connection failed, please retry.');
+        navigateTo('/');
+      }
+
+  return (
+    (!username) ? (
+        handleConnectionError()
+        )
+     :
     (
     <div className='flex justify-center items-center'>
       <div className="bg-slate-100/50 rounded-md select-none h-16 min-w-24 flex flex-col justify-center items-center shadow-lg truncate">
